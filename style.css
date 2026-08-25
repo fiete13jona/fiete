@@ -41,6 +41,7 @@ p {
 	
 .card-container {
 	max-width: 2000px;
+	padding: 40px;
 	display: flex;
 	gap: 30px;
 	flex-wrap: wrap;
