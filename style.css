@@ -18,21 +18,24 @@ p {
 	color: rgba(105, 107, 97, 1);
 }
 
-
-.content {
-	max-width: 2000px;
-	margin: 0 auto;
-	font-family: Verdana, sans-serif;
+a {
+		color: rgb(182, 87, 134);
 }
 
 
+	
+
+
+
 .card1 {
-	max-width: 2000px;
+	
 	background-color: rgba(255, 247, 193, 1);
 	padding: 50px;
 	margin: 0 auto;
 	border-radius: 30px;
 	text-align: center;
+	font-family: Verdana, sans-serif;
+	width: 80%
 	
 
 	
@@ -40,23 +43,35 @@ p {
 }
 	
 .card-container {
-	max-width: 2000px;
-	padding: 40px;
-	display: flex;
-	gap: 30px;
-	flex-wrap: wrap;
-	margin: 0 auto;
-	justify-content: center;
-	
+	width: 80%;
+    padding: 40px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 50px;
+   
+}	
+
+@media (max-width: 1000px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card {
 	background-color: rgba(255, 247, 193, 1);
-	padding: 50px;
-	width: 450px;
-	margin: 30px;
-	border-radius: 30px;
+    padding: 50px;
+    border-radius: 30px;
+    font-family: Verdana, sans-serif;
 
 	
 	
 }
+
